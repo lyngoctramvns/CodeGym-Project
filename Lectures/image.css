@@ -1,0 +1,8 @@
+body {
+    background: url('./abstract-blue-geometric-shapes-background_1035-17545.jpg');
+    background-size: cover;
+}
+
+.image {
+    border-radius: 50%;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+    <form class = "formcontainer">
+        <table>
+            <thead>
+            <h1>
+                ĐĂNG KÝ HỌC VIÊN
+            </h1>
+            </thead>
+            <tbody>
+
+           
+                <label>Họ và tên</label>
+                    <input type = "text" class = "fullname"/>
+            
+                <label>Ngày sinh</label>
+                    <input type = "text" class = "birthdate"/>
+             
+                    <p>Giới tính</p>
+                    <input type = "radio" id = "male" value = "male"/>
+                    <label>Nam</label>
+                    <input type = "radio" id = "female" value = "female"/>
+                    <label>Nữ</label>
+            
+
+            
+                <label>Địa chỉ</label>
+                    <textarea></textarea>
+            
+
+                <label for="cars">Chọn lớp</label>
+
+                <select name="cars" id="cars">
+                <option value="volvo"></option>
+                <option value="saab">Lớp 2</option>
+                <option value="mercedes">Lớp 3</option>
+                <option value="audi">Lớp 4</option>
+                </select>
+                <br/>
+                <label>Email</label>
+                <input type = "email"/>
+                <br/>
+                <label>Điện thoại</label>
+                <input type = "number"/>
+
+            
+                <button>Đăng ký</button>
+                <button>Nhập lại</button>
+            
+            </tbody>
+        </table>
+    </form>
+</body>
+</html>
