@@ -5,8 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+        table {
+            background-color:rgb(253, 239, 159);
+            width: 50%;
+            margin:auto;
+        }
+        tr {
+            height: 35px;
+        }
+        th {
+            text-align: left;
+            color:blue;
+        }
+        td:nth-child(1) {  
+            width:110px;
+            color: rgb(2, 2, 216);
+        }
+        button {
+            background-color: #e7e7e7; 
+            color: black;
+            border: 1px solid #000000;
+            padding: 4px 14px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 2px;
+        }
+        textarea {
+            width: 250px;
+            height: 100px;
+        }
+        .title {
+            background-color:rgb(147, 252, 217) ;
+        }
+    </style>
 </head>
 <body>
-    
+    <form>
+        <table>
+            <tr>
+                <th colspan = "2" class = "title"><big>STUDENT REGISTRATION</big></th>
+            </tr>
+            <tr>
+                <td>Full Name</td>
+                <td><input type = "text" size = "32"/></td>
+            </tr>
+            <tr>
+                <td>Birth Date</td>
+                <td><input type = "text"/></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type = "radio"/> Male <input type = "radio"/> Female</td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td>Class</td>
+                <td>
+                    <select>
+                        <option value = "default" selected="selected">-Pick A Class-</option> 
+                        <option value = "A">A</option>
+                        <option value = "A">B</option>
+                        <option value = "A">C</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type = "email"/></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type = "text"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button>Register</button> <button>Reset</button></td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
