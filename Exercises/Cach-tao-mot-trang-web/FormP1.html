@@ -5,12 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        td {
+            border-collapse: collapse;
+            margin: 0;
+        }
+        .label {
+            width: 80px;
+            color: blue;
+        }
+        .tableinput{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .tablecheckboxes {
+            margin-left: 31.6%;
+        }
+        .button {
+            margin-left: auto;
+            margin-right:auto;
+        }
+        .div1 {
+            margin:auto;
+            margin-top: 0;
+            width: 800px;
+            height:300px;
+            background-color:aqua;
+        }
+        .div2 {
+            margin-left: 15px;
+            margin-right: 15px;
+            width: 750px;
+            height:250px;
+            background-color: white;
+        }
+        .div3 {
+            width: 800px;
+            height:20px;
+            margin: auto;
+            margin-bottom: 0;
+            background-color:aqua;
+        }
+        .h3 {
+            font-size:x-large;
+        }
+        .tablehead{
+            width: 100%;
+            text-align: center;
+            background-color:rgb(255, 64, 30);
+            color:white;
+        }
+        .option {
+            color:orange;
+        }
+        .submit {
+            background-color: #e7e7e7; 
+            color: black;
+            border: none;
+            padding: 6px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        body {
+            font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+        }
+    </style>
 </head>
 <body>
     <form>
-        <table>
-            
+        <div class = "div3"></div>
+        <div class = "div1">
+            <div class = "div2">
+        <table class = "tablehead">
+            <tr>
+            <td class = "h3">DESCRIBE YOUR HOBBY</td>
+            </tr>
         </table>
+        <table class = "tableinput">
+            <tr>
+                <td class = "label">Full Name</td>
+                <td><input type = "text"/></td>
+            </tr>
+            <tr>
+                <td class = "label">Email</td>
+                <td><input type = "email"/></td> 
+            </tr>
+        </table>
+        <table class = "tablecheckboxes">
+            <tr>
+                <td class = "label">Hobbies</td>
+                <td class = "option"><input type = "checkbox" /> Sport</td>
+                <td class = "option"><input type = "checkbox"/> Music</td>
+                <td class = "option"><input type = "checkbox"/> Reading</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class = "option"><input type = "checkbox"/> Surfing Web</td>
+                <td class = "option"><input type = "checkbox"/> Games</td>
+                <td class = "option"><input type = "checkbox" /> Cinema</td> 
+            </tr>
+            <tr>
+                <td></td>
+                <td class = "option"><input type = "checkbox"/> Travel</td>
+            </tr>
+        </table>
+        <table class = "button">
+            <tr>
+                <td><button class = "submit">Submit</button></td>
+                <td><button class = "submit">Reset</button></td>
+            </tr>
+        </table>
+        </div>
+        </div>
     </form>
 </body>
 </html>
