@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id = "txt" style = "color:red" onmouseout = "toBlack()">Xin chào</h1>
+    <input type = "text" id = "ip"/>
+    <input type = "text" id = "ip2"/>
+    <button onClick = "sum()">Press</button>
+    <h2 id = "res"></h2>
+
+    <script>
+        function toBlack(){
+            document.getElementById ('txt').style.color = 'black';
+        }
+        
+    function sum(){
+
+        let numberOne = +document.getElementById('ip').value;
+        
+        let numberTwo = +document.getElementById('ip2').value;
+        document.getElementById('res').innerHTML = "Tổng là :" + (numberOne + numberTwo);
+    };
+        
+    </script>
+</body>
+</html>
