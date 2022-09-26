@@ -1,4 +1,4 @@
-function letter (){
+function letter() {
     let name = document.getElementById('name').value;
     let place = document.getElementById('place').value;
     let date = document.getElementById('date').value;
