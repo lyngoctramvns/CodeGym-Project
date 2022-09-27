@@ -23,11 +23,11 @@ function calculate() {
             result = subjects + 0;
     };
 
-    if (subjects >= 0 && subjects <= 30) {
+    if (math >= 0 && literature >= 0 && english >= 0 && math <= 10 && literature <= 10 && english <= 10) {
         document.getElementById('result').innerHTML = "Tổng điểm ĐH khối D của bạn là: " + result;
     } else {
         document.getElementById('result').innerHTML = "Số điểm 3 môn đã nhập không hợp lệ";
-    }
+    };
 
     
     
