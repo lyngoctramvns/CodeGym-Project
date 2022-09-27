@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "calculategrade.js"></script>
+</head>
+<body>
+    <h1>Tính điểm ĐH khối D</h1>
+    <div>
+        <label>Môn Toán</label>
+        <input id = "math" type = "text"/>
+    </div>
+    <div>
+        <label>Môn Văn</label>
+        <input id = "literature" type = "text"/>
+    </div>
+    <div>
+        <label>Môn Anh</label>
+        <input id = "english" type = "text"/>
+    </div>
+    <div>
+        <label>Khu vực</label>
+        <select id = 'region'>
+            <option value = 'KV1'>KV1</option>
+            <option value = 'KV2'>KV2</option>
+            <option value = 'KV2-NT'>KV2-NT</option>
+            <option value = 'KV3'>KV3</option>
+        </select>
+    </div>
+    <button onClick = "calculate()">Tính điểm</button>
+    <h4 id = "result"></h4>
+</body>
+</html>
