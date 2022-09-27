@@ -24,7 +24,7 @@ function calculate() {
     };
 
     if (subjects >= 0 && subjects <= 30) {
-        document.getElementById('result').innerHTML = "Tổng điểm thi khối D của bạn là: " + result;
+        document.getElementById('result').innerHTML = "Tổng điểm ĐH khối D của bạn là: " + result;
     } else {
         document.getElementById('result').innerHTML = "Số điểm 3 môn đã nhập không hợp lệ";
     }
