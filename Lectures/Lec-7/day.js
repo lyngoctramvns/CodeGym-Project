@@ -31,6 +31,7 @@ switch(month) {
     case 9:
     case 11:
         alert('30 ngày');
+        break;
     default:
         alert('không hợp lệ');
 };
