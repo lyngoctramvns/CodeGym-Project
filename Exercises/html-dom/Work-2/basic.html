@@ -7,6 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div>
+    <label>Nhập số</label>
+    </div>
+    <input type = "text" id = 'input'/>
+    <button id = "button" onClick = "checkNumber()">Kiểm tra</button>
+    <script>
+        function checkNumber(){
+            var number = +document.getElementById('input').value;
+
+            if (number % 2 == 0) {
+                alert(number + " " + "là một số chẵn")
+            } else {
+                alert(number + " " + "là một số lẻ")
+            };
+
+        }
+    </script>
 </body>
 </html>
