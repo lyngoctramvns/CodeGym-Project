@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src = "converter.js"></script>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+            <th>Amount</th>
+            <th>From Currency</th>
+            <th>To Currency</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type = "text" id = "amount"></td>
+                <td>
+                    <select style = "width: 130px" id = "from-currency">
+                        <option value = "Vietnam">Vietnam</option>
+                        <option value = "USD">USD</option>
+                    </select>
+                </td>
+                <td>
+                    <select style = "width: 130px" id = "to-currency">
+                        <option value = "USD">USD</option>
+                        <option value = "Vietnam">Vietnam</option>
+                    </select>
+                </td>
+                <td>
+                    <button style = "background-color:rgba(110, 34, 182,0.5); padding: 3px 17px; border: none; border-radius: 3px;" id = "convert" onClick = "convertCurrency()">Convert</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <h4 id = "convert-result"></h4>
+    </div>
+</body>
+</html>
