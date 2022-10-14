@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let height = +prompt('Nhập chiều cao(m): ');
+        let weight = +prompt('Nhập cân nặng:(kg) ');
+
+        let bmi = weight /(Math.pow(height, 2));
+
+        if (bmi > 40){
+            document.write("béo phì cấp độ III");
+        } else if (35 <=bmi && bmi < 40){
+            document.write("béo phì cấp độ II");
+        } else {
+            if (30 <= bmi && bmi < 35) {
+                document.write("béo phì cấp độ I");
+            } else if (25 <= bmi && bmi <  30) {
+                document.write("thừa cân");
+            } else {
+                if (18.5 <= bmi && bmi < 25){
+                    document.write("bình thường");
+                } else if (17 <= bmi && bmi < 18.5) {
+                    document.write("gầy cấp độ I");
+                } else {
+                    if (16 <= bmi && bmi < 17) {
+                        document.write("gầy cấp độ II");
+                    } else {
+                        document.write("gầy cấp độ III");
+                    };
+                };
+            };
+        };
+    </script>
+</body>
+</html>
