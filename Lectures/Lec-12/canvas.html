@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id = "mycanvas" width = "500px" height = "500px" style = "border:1px solid"></canvas>
+    <script>
+        var ctx = document.getElementById("mycanvas").getContext("2d");
+        // ctx.moveTo(0,0); //Di chuyển nét vẽ 1 về vị trí 0,0
+        // ctx.lineTo(100, 70); //Ngắm đường thẳng đến 1 tọa độ
+        // ctx.stroke();//vẽ
+
+        ctx.beginPath();
+        ctx.arc(100, 100, 50, Math.PI, 2 * Math.PI, true);
+        //Tọa độ x, tọa độ y, bán kính, góc vẽ đầu, góc vẽ cuối, vẽ ngược hay xuôi chiều kim đồng hồ
+        //Vẽ theo kim đồng hồ
+        ctx.stroke();
+        ctx.fill(); //Hỗ trợ đổ màu
+
+        ctx.font = "30px Arial";
+        ctx.fillText("Hello World", 10, 50);
+        ctx.fillRect(100,200, 140, 160);
+    </script>
+</body>
+</html>
