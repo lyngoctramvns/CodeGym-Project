@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id = "myCanvas" width = "500px" height = "500px" style = "border:1px solid"></canvas>
+    <script>
+        class HCN {
+            constructor(x, y, w, h, c) {
+                this.x = x;
+                this.y = y;
+                this.w = w;
+                this.h = h;
+                this.c = c;
+            }
+
+            draw() {
+                let ctx = document.getElementById('myCanvas').getContext('2d');
+                ctx.fillStyle = this.c;
+                ctx.clearRect(0,0,500,500);
+                ctx.fillRect(this.x, this.y, this.w, this.h);
+            }
+
+            moveRight(){
+                this.x += 5;
+                this.draw();
+            }
+        }
+
+        let hcn1 = new HCN(50, 50, 50, 50, 'red');
+        hcn1.draw(); 
+        window.addEventListener('keydown', () => {
+            if(e.key == 'ArrowRight'){
+                hcn1.moveRight();
+            }
+        })
+
+    </script>
+</body>
+
+</html>

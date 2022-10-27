@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" href="calculator.css"/>
+</head>
+
+<body>
+    <table class = "table">
+        <tr>
+            <td>
+                <input class = "display" type="text" id="calculator-display" readonly/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class = "button" id="1" onClick = "number(1)">1</button>
+                <button class = "button" id="2" onClick = "number(2)">2</button>
+                <button class = "button" id="3" onClick = "number(3)">3</button>
+                <button class = "button" id = "+" onClick = "inputOperator('+')">+</button>
+            </td>
+        <tr>
+            <td>
+                <button class = "button" id="4" onClick = "number(4)">4</button>
+                <button class = "button" id="5" onClick = "number(5)">5</button>
+                <button class = "button" id="6" onClick = "number(6)">6</button>
+                <button class = "button" id = "-" onClick = "inputOperator('-')">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class = "button" id="7" onClick = "number(7)">7</button>
+                <button class = "button" id="8" onClick = "number(8)">8</button>
+                <button class = "button" id="9" onClick = "number(9)">9</button>
+                <button class = "button" id = "x" onClick = "inputOperator('x')">x</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <button class = "button" id = "C" onClick = "window.location.reload()">C</button>
+            <button class = "button" id="0" onClick = "number(0)">0</button>
+            <button class = "button" id = "=" onClick = "calculator()">=</button>
+            <button class = "button" id = "/" onClick = "inputOperator('/')">/</button>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

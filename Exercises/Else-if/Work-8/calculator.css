@@ -1,0 +1,27 @@
+.table {
+    margin-left: auto;
+    margin-right: auto;
+    border:1px solid black;
+}
+
+.button {
+    background-color: white;
+    border: 1px solid gray;
+    color: blue;
+    padding: 15px 32px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    width: 80px;
+}
+
+.display {
+    color: blue;
+    width: 96%;
+    padding: 12px 20px;
+    margin: 7px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
