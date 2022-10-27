@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="1000px" height="500px" style="border:1px solid"></canvas>
+
+    <script>
+        class HCN {
+            constructor(x, y, w, h, c) {
+                this.x = x;
+                this.y = y;
+                this.w = w;
+                this.h = h;
+                this.c = c;
+            }
+
+            draw() {
+                let ctx = document.getElementById('myCanvas').getContext('2d');
+                ctx.clearRect(0,0, 1000, 500)
+                ctx.fillStyle = this.c;
+                ctx.fillRect(this.x, this.y, this.w, this.h);
+            }
+
+        }
+
+        let hcn1 = new HCN(50, 50, 50, 50, 'red');
+        hcn1.draw();
+
+    </script>
+</body>
+
+</html>
