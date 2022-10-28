@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const question = +prompt('Palindrome number?');
+
+        function isPalindrome(x) {
+            let num = x;
+
+            var myArr = String(num).split("").map((num) => {
+                return Number(num)
+            })
+
+            let i = 0;
+            let result = false;
+
+            if (x === 0) {
+                result = true;
+            } else {
+                do {
+                    if (x > 0 && myArr[i] == myArr[myArr.length - i - 1] && x % 10 !== 0) {
+                        result = true;
+                    } else {
+                        result = false;
+                        break;
+                    };
+                    i++;
+                } while (i < myArr.length);
+
+            }
+
+            alert(result);
+        };
+
+        isPalindrome(question);
+    </script>
+</body>
+
+</html>
