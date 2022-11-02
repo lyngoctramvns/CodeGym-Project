@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let password = prompt("Please tell the pass to open the door: ")
+        
+        do {
+            password = prompt("Wrong password. Say the password again: ");
+        } while (password !== "Open Sesame!");
+
+        alert("Successfully opened!");
+        
+    </script>
+</body>
+</html>
