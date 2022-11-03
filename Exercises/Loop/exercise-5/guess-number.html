@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onClick = "guessNumber()"> Chơi</button>
+    <script>
+        function guessNumber (){
+            let max = +prompt("Chọn khoảng nhập số (Nhập số lớn nhất trong khoảng muốn đoán): ");
+
+            let min = 0;
+
+            let random = Math.round(Math.random() * (max-min) + min);
+            console.log(random);
+            
+            let turn = 0;
+
+            let numberguess = prompt("Nhập số đoán: ");
+            
+            while (turn < 3){
+
+                do {
+
+                numberguess = +prompt("Nhập số đoán: ");
+
+                } while (numberguess !== random);
+            }
+            
+
+            alert("Bạn đoán đúng! Trò chơi kết thúc!");
+
+        }
+    </script>
+</body>
+</html>
