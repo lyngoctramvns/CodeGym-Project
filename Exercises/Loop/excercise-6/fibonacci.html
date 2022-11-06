@@ -21,12 +21,13 @@
             let num2 = null;
             let newFibonnaci = [];
 
-            for (i > 0; i < n; i ++) {
+            while (i < n) {
                
                 newNum = fibonacci[i-1] + fibonacci[i];
                 fibonacci = [...fibonacci, newNum];
                 num2 = fibonacci2[i-1] + fibonacci2[i];
                 fibonacci2 = [...fibonacci2,num2];
+                i++;
             };
 
             
