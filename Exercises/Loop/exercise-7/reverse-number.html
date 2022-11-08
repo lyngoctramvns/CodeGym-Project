@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label>Điền 1 số vào trường: </label>
+    <div>
+        <input type="text" id="number" />
+    </div>
+    <button onclick="reverseNumber()">Ok</button>
+    <button onclick="cancel()">Cancel</button>
+    <p id="print"></p>
+    <script>
+        function reverseNumber() {
+            let number = +document.getElementById('number').value;
+
+            let digits = number.toString().split('');
+
+            let i = 0;
+
+                while (number >= 0) {
+                    let d = number % 10;
+                    let n = i * 10 + d;
+                    number = Math.round(number / 10);
+
+                    if (number == 0) {
+                        document.getElementById('print').innerHTML = "Số đảo ngược của số trên là: " + n;
+                        break;
+                    } else {
+                        i = n;
+                    };
+                };
+        };
+        //Đang chưa đúng với các số có chữ số trong đó > 5
+    </script>
+</body>
+
+</html>
